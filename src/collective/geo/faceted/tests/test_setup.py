@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
-from plone import api
 from collective.geo.faceted.testing import COLLECTIVE_GEO_FACETED_INTEGRATION_TESTING  # noqa
+from plone import api
 
 import unittest
 
@@ -45,6 +45,6 @@ class TestUninstall(unittest.TestCase):
 
     def test_browserlayer_removed(self):
         """Test that ICollectiveGeoFacetedLayer is removed."""
-        from collective.geo.faceted.interfaces import ICollectiveGeoFacetedLayer
+        from collective.geo.faceted.interfaces import ICollectiveGeoFacetedLayer  # noqa
         from plone.browserlayer import utils
         self.assertNotIn(ICollectiveGeoFacetedLayer, utils.registered_layers())

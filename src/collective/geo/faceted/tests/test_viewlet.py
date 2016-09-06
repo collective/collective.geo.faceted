@@ -4,10 +4,10 @@ from collective.geo.leaflet import geomap
 from eea.facetednavigation.config import ANNO_FACETED_LAYOUT
 from plone import api
 from Products.Five.browser import BrowserView
+from zope.annotation.interfaces import IAnnotations
 from zope.component import getMultiAdapter
 from zope.component import queryMultiAdapter
 from zope.viewlet.interfaces import IViewletManager
-from zope.annotation.interfaces import IAnnotations
 
 import unittest
 

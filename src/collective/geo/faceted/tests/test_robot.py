@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
+from collective.geo.faceted.testing import COLLECTIVE_GEO_FACETED_ACCEPTANCE_TESTING  # noqa
 from plone.app.testing import ROBOT_TEST_LEVEL
 from plone.testing import layered
-from collective.geo.faceted.testing import COLLECTIVE_GEO_FACETED_ACCEPTANCE_TESTING  # noqa
 
 import os
 import robotsuite
