@@ -1,4 +1,4 @@
 Contributors
 ============
 
-- Benoit Suttor, bsuttor@imio.be
+- Benoît Suttor, bsuttor@imio.be
