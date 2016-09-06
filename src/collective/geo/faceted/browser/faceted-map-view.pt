@@ -1,0 +1,32 @@
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="en"
+  lang="en"
+  xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:metal="http://xml.zope.org/namespaces/metal"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  metal:use-macro="context/main_template/macros/master"
+  i18n:domain="eea">
+
+  <body>
+
+    <metal:content-core fill-slot="content-core">
+      <metal:block define-macro="content-core">
+
+        <div
+          tal:define="
+            view nocall:context/@@faceted-single-map-view;
+            folderContents folderContents | python:context.getFolderContents(batch=False);
+            json python: view.json(folderContents);">
+          <!-- <div tal:content="json"/> -->
+
+          <div id="geojson" tal:attributes="data-geojson json" class="hiddenStructure"></div>
+
+        </div>
+
+        <div class="pagination" style="display: none"></div>
+
+      </metal:block>
+    </metal:content-core>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object name="Document">
+    <property name="behaviors" purge="false">
+        <element value="collective.geo.behaviour.interfaces.ICoordinates" />
+    </property>
+</object>

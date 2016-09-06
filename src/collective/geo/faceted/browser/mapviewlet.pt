@@ -1,0 +1,13 @@
+<tal:condition tal:condition="view/avaiable">
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    src=""
+    tal:attributes="src string:${context/@@plone_portal_state/portal_url}/++resource++collective.geo.faceted/update_map.js"></script>
+
+  <div id="map-viewlet" i18n:domain="collective.geo.leaflet">
+    <metal:use use-macro="context/@@collectivegeoleaflet-macros/map-div"/>
+    <metal:use use-macro="context/@@collectivegeoleaflet-macros/map-init-leaflet"/>
+    <metal:use use-macro="context/@@collectivegeoleaflet-macros/map-search"/>
+  </div>
+</tal:condition>

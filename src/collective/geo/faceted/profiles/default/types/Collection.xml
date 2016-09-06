@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object name="Collection">
+  <property name="behaviors" purge="False">
+    <element
+      value="eea.facetednavigation.subtypes.interfaces.IPossibleFacetedNavigable"/>
+  </property>
+</object>

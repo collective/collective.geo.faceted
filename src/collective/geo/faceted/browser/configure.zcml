@@ -1,0 +1,40 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:faceted="http://namespaces.zope.org/faceted"
+  i18n_domain="collective.geo.faceted">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml"/>
+
+  <browser:jbot
+    directory="overrides"
+    layer="collective.geo.faceted.interfaces.ICollectiveGeoFacetedLayer"/>
+
+  <!-- Publish static files -->
+  <browser:resourceDirectory name="collective.geo.faceted" directory="static"/>
+
+  <faceted:view
+    name="faceted-map-view"
+    template="faceted-map-view.pt"
+    for="eea.facetednavigation.interfaces.IFacetedNavigable"
+    title="Faceted map view"
+    permission="zope2.View"
+    layer="collective.geo.faceted.interfaces.ICollectiveGeoFacetedLayer"/>
+
+  <browser:page
+    for="*"
+    name="faceted-single-map-view"
+    class=".view.MapView"
+    permission="zope2.View"
+    layer="collective.geo.faceted.interfaces.ICollectiveGeoFacetedLayer"/>
+
+  <browser:viewlet
+    name="mapviewlet"
+    manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+    class=".mapviewlet.MapViewlet"
+    layer="collective.geo.faceted.interfaces.ICollectiveGeoFacetedLayer"
+    permission="zope2.View"/>
+
+</configure>
