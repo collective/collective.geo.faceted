@@ -26,13 +26,6 @@
     provides="Products.GenericSetup.interfaces.EXTENSION"
     post_handler=".setuphandlers.uninstall"/>
 
-  <genericsetup:registerProfile
-    name="test"
-    title="collective.geo.faceted (test)"
-    directory="profiles/test"
-    description="Test the collective.geo.faceted add-on."
-    provides="Products.GenericSetup.interfaces.EXTENSION"/>
-
   <utility
     factory=".setuphandlers.HiddenProfiles"
     name="collective.geo.faceted-hiddenprofiles"/>

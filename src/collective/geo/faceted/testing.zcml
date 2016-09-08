@@ -1,0 +1,15 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+  i18n_domain="collective.geo.faceted">
+
+  <include file="configure.zcml"/>
+
+  <genericsetup:registerProfile
+    name="testing"
+    title="collective.geo.faceted tests"
+    directory="profiles/testing"
+    description="Test the collective.geo.faceted add-on."
+    provides="Products.GenericSetup.interfaces.EXTENSION"/>
+
+</configure>

@@ -10,7 +10,7 @@ class HiddenProfiles(object):
         """Hide uninstall profile from site-creation and quickinstaller"""
         return [
             'collective.geo.faceted:uninstall',
-            'collective.geo.faceted:test',
+            'collective.geo.faceted:testing',
         ]
 
 

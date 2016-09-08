@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from collective.geo.faceted.testing import COLLECTIVE_GEO_FACETED_INTEGRATION_TESTING  # noqa
+from eea.facetednavigation.interfaces import IFacetedNavigable
 from plone import api
+from zope.interface import directlyProvides
 import unittest
 
 
@@ -17,7 +19,8 @@ class TestView(unittest.TestCase):
         coll = api.content.create(
             type='Collection', container=self.portal, id='collection')
         view = coll.restrictedTraverse('faceted-single-map-view')
-        json = view.json([])
+        directlyProvides(coll, IFacetedNavigable)
+        json = view.json()
         self.assertEqual(
             json, '{"type": "FeatureCollection", "features": [], "title": ""}')
-        self.assertEqual(view.get_brains(), [])
+        self.assertEqual(len(view.get_brains()), 7)

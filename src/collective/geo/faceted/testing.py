@@ -18,10 +18,10 @@ class CollectiveGeoFacetedLayer(PloneSandboxLayer):
         # Load any other ZCML that is required for your tests.
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
-        self.loadZCML(package=collective.geo.faceted)
+        self.loadZCML(package=collective.geo.faceted, name='testing.zcml')
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'collective.geo.faceted:test')
+        applyProfile(portal, 'collective.geo.faceted:testing')
 
 
 COLLECTIVE_GEO_FACETED_FIXTURE = CollectiveGeoFacetedLayer()
