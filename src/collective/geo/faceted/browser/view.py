@@ -4,8 +4,10 @@ from collective.geo.json.browser.jsonview import JsonFolderDocument
 
 class MapView(JsonFolderDocument):
 
-    def json(self, folderContents):
-        self.set_brains(folderContents)
+    def json(self):
+        view = self.context.restrictedTraverse('faceted_query')
+        brains = view.query(batch=False)
+        self.set_brains(brains)
         json = self.get_json()
         return json
 

@@ -5,7 +5,11 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Do not batch faceted results.
+  [bsuttor]
+
+- Add MarkerCluster.
+  [bsuttor]
 
 
 1.0a2 (2016-09-08)

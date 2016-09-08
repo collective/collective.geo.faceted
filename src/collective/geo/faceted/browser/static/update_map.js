@@ -5,18 +5,24 @@ jQuery(document).ready(function() {
   );
 });
 
-var geojson_data;
+var geojson_layer;
+var markers;
 
 function update_map() {
   // alert('update map');
   json = $('#geojson').data('geojson');
   layername = $('h1.documentFirstHeading').html();
-  if (typeof geojson_data !== 'undefined') {
-    controllayers.removeLayer(geojson_data);
-    geojson_data.clearLayers();
+  if (typeof geojson_layer !== 'undefined') {
+    // controllayers.removeLayer(geojson_layer);
+    geojson_layer.clearLayers();
   }
+  if (typeof markers !== 'undefined') {
+    controllayers.removeLayer(markers);
+    markers.clearLayers();
+  }
+  markers = new L.MarkerClusterGroup();
 
-  geojson_data = L.geoJson(json, {
+  geojson_layer = L.geoJson(json, {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(
         '<a href="' + feature.properties.url + '" target="_blank">' +
@@ -37,7 +43,9 @@ function update_map() {
       });
     }
   });
-  map.addLayer(geojson_data);
-  controllayers.addOverlay(geojson_data, layername);
+  markers.addLayer(geojson_layer);
+  map.addLayer(markers);
+  // map.addLayer(geojson_layer);
+  controllayers.addOverlay(markers, layername);
 
 }
