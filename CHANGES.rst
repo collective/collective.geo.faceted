@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a3 (unreleased)
+1.0a3 (2016-09-08)
 ------------------
 
 - Do not batch faceted results.
