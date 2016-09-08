@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
+1.0a2 (2016-09-08)
 ------------------
 
 - Create test profile.
