@@ -5,7 +5,8 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Create test profile.
+  [bsuttor]
 
 
 1.0a1 (2016-09-07)

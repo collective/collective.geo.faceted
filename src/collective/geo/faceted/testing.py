@@ -21,7 +21,7 @@ class CollectiveGeoFacetedLayer(PloneSandboxLayer):
         self.loadZCML(package=collective.geo.faceted)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'collective.geo.faceted:default')
+        applyProfile(portal, 'collective.geo.faceted:test')
 
 
 COLLECTIVE_GEO_FACETED_FIXTURE = CollectiveGeoFacetedLayer()
