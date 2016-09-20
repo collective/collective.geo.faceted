@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from collective.geo.leaflet import geomap
+from collective.geo.leaflet.interfaces import IGeoMap
 from eea.facetednavigation.config import ANNO_FACETED_LAYOUT
 from plone.app.layout.viewlets import common
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
@@ -21,4 +21,4 @@ class MapViewlet(common.ViewletBase):
 
     @property
     def geomap(self):
-        return geomap.GeoMap(self.context, self.request)
+        return IGeoMap(self.context)

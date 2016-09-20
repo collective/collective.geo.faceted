@@ -5,7 +5,8 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use adapter for getting geomap settings.
+  [bsuttor]
 
 
 1.0a3 (2016-09-08)
