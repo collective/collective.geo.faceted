@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a4 (unreleased)
+1.0a4 (2016-09-20)
 ------------------
 
 - Use adapter for getting geomap settings.

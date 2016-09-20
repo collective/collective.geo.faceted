@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='collective.geo.faceted',
-    version='1.0a4.dev0',
+    version='1.0a4',
     description="A map view for a facetednav",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
