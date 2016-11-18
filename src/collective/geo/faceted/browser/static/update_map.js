@@ -9,11 +9,16 @@ var geojson_layer;
 var markers;
 
 function update_map() {
-  // alert('update map');
-  json = $('#geojson').data('geojson');
+  var json_container = $('#geojson');
+  if (json_container.length == 0) {
+    $('#map-viewlet').hide();
+    return
+  } else {
+    $('#map-viewlet').show();
+  }
+  json = json_container.data('geojson');
   layername = $('h1.documentFirstHeading').html();
   if (typeof geojson_layer !== 'undefined') {
-    // controllayers.removeLayer(geojson_layer);
     geojson_layer.clearLayers();
   }
   if (typeof markers !== 'undefined') {
