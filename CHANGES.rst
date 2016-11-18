@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a5 (unreleased)
+1.0a5 (2016-11-18)
 ------------------
 
 - Do not show the map viewlet container if json data is unavailable
