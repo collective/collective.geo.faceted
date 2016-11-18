@@ -5,7 +5,8 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Do not show the map viewlet container if json data is unavailable
+  [mpeeters]
 
 
 1.0a4 (2016-09-20)
