@@ -45,6 +45,7 @@ setup(
         'z3c.jbot',
         'eea.facetednavigation',
         'collective.geo.leaflet',
+        'plone.app.contenttypes',
     ],
     extras_require={
         'test': [
