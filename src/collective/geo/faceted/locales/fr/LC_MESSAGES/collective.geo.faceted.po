@@ -1,6 +1,3 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,40 +12,40 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.geo.faceted\n"
+"Domain: DOMAIN\n"
 
 #: ../widget/bounds.py:28
 msgid "Boundary Bounds"
-msgstr ""
+msgstr "Limiter dans la carte visible"
 
 #: ../widget/bounds.py:20
 msgid "Bounds selection"
-msgstr ""
+msgstr "Afficher uniquement les objects visibles dans la carte"
 
 #: ../browser/configure.zcml:24
 msgid "Faceted map view"
-msgstr ""
+msgstr "Vue faceted avec carte"
 
 #: ../configure.zcml:20
 msgid "Installs the collective.geo.faceted add-on."
-msgstr ""
+msgstr "Installer le module collective.geo.faceted"
 
 #: ../testing.zcml:14
 msgid "Test the collective.geo.faceted add-on."
-msgstr ""
+msgstr "Test du module collective.geo.faceted"
 
 #: ../configure.zcml:28
 msgid "Uninstalls the collective.geo.faceted add-on."
-msgstr ""
+msgstr "Désinstaller le module collective.geo.faceted"
 
 #: ../configure.zcml:20
 msgid "collective.geo.faceted"
-msgstr ""
+msgstr "collective.geo.faceted"
 
 #: ../configure.zcml:28
 msgid "collective.geo.faceted (uninstall)"
-msgstr ""
+msgstr "collective.geo.faceted (désinstaller)"
 
 #: ../testing.zcml:14
 msgid "collective.geo.faceted tests"
-msgstr ""
+msgstr "collective.geo.faceted tests"
