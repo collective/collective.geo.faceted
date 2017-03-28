@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a6 (unreleased)
+1.0.0 (2017-03-28)
 ------------------
 
 - Add faceted boundary bounds widget.
