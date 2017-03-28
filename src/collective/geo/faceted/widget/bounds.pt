@@ -1,0 +1,27 @@
+<div class="faceted-widget faceted-bounds-widget" style="display: none"
+     i18n:domain="eea" tal:define="
+  error_view nocall:context/@@faceted.widget.error;
+  wid python:view.data.getId();
+  template nocall:view;
+  hidden python:True;
+  css string:faceted-widget faceted-widget-hidden faceted-bounds-widget;"
+  tal:attributes="id string:${wid}_widget; class css">
+
+<fieldset class="widget-fieldset">
+  <legend tal:define="title python:template.data.get('title', '')" tal:content="
+    python:template.translate(title)" i18n:translate="">Bounds Widget</legend>
+
+
+  <form action="." method="get"
+        tal:on-error="structure python:error_view(error=error, cid=wid)">
+  <ul>
+    <li>
+      <div class="faceted-bounds faceted-bounds-ne"
+           data-value=""> </div>
+      <div class="faceted-bounds faceted-bounds-sw"
+           data-value=""> </div>
+    </li>
+  </ul>
+  </form>
+</fieldset>
+</div>

@@ -3,6 +3,7 @@ from collective.geo.faceted.testing import COLLECTIVE_GEO_FACETED_INTEGRATION_TE
 from eea.facetednavigation.interfaces import IFacetedNavigable
 from plone import api
 from zope.interface import directlyProvides
+
 import unittest
 
 

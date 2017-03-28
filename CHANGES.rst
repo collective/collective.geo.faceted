@@ -5,7 +5,8 @@ Changelog
 1.0a6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add faceted boundary bounds widget.
+  [bsuttor]
 
 
 1.0a5 (2016-11-18)

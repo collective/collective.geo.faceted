@@ -3,6 +3,7 @@
   <version>1000</version>
   <dependencies>
     <dependency>profile-eea.facetednavigation:default</dependency>
+    <dependency>profile-plone.app.contenttypes:default</dependency>
     <dependency>profile-collective.geo.leaflet:default</dependency>
   </dependencies>
 </metadata>

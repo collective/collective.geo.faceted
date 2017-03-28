@@ -4,6 +4,7 @@
   i18n_domain="collective.geo.faceted">
 
   <include file="configure.zcml"/>
+  <include package="collective.geo.leaflet"/>
 
   <genericsetup:registerProfile
     name="testing"
