@@ -1,4 +1,7 @@
+var markers;
+
 jQuery(document).ready(function() {
+  markers = new L.MarkerClusterGroup();;
   jQuery(Faceted.Events).bind(
     Faceted.Events.AJAX_QUERY_SUCCESS,
     update_map
@@ -6,7 +9,6 @@ jQuery(document).ready(function() {
 });
 
 var geojson_layer;
-var markers;
 
 function update_map() {
   var json_container = $('#geojson');
@@ -25,7 +27,6 @@ function update_map() {
     controllayers.removeLayer(markers);
     markers.clearLayers();
   }
-  markers = new L.MarkerClusterGroup();
 
   geojson_layer = L.geoJson(json, {
     onEachFeature: function(feature, layer) {
