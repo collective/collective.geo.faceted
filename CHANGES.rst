@@ -5,7 +5,8 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add Polygon and Line into boundary box widget.
+  [bsuttor]
 
 
 1.0.1 (2017-04-26)

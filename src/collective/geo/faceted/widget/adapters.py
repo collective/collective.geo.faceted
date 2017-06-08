@@ -25,6 +25,17 @@ class WidgetFilterBrains(object):
             west = float(form.get('west'))
             for brain in brains:
                 if brain.zgeo_geometry is not Missing.Value:
-                    lon, lat = brain.zgeo_geometry['coordinates']
-                    if south <= lat <= north and west <= lon <= east:
-                        yield brain
+                    zgeo_geometry = brain.zgeo_geometry
+                    geo_type = brain.zgeo_geometry.get('type', None)
+                    if geo_type == 'Point':
+                        lon, lat = zgeo_geometry['coordinates']
+                        if south <= lat <= north and west <= lon <= east:
+                            yield brain
+                    elif geo_type in ['Polygon', 'Line']:
+                        in_map = False
+                        for lon, lat in zgeo_geometry['coordinates'][0]:
+                            # see polygon if one of is point is in map
+                            if south <= lat <= north and west <= lon <= east:
+                                in_map = True
+                        if in_map:
+                            yield brain
