@@ -5,7 +5,8 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Init boundary box on RESET faceted event.
+  [bsuttor]
 
 
 1.0.2 (2017-06-08)

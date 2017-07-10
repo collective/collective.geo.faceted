@@ -48,4 +48,7 @@ jQuery(document).ready(function(){
   jQuery(Faceted.Events).bind(
     Faceted.Events.INITIALIZE,
     Faceted.initializeBoundsWidget);
+  jQuery(Faceted.Events).bind(
+    Faceted.Events.RESET,
+    Faceted.initializeBoundsWidget);
 });
