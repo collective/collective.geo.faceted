@@ -2,10 +2,19 @@
   xmlns="http://namespaces.zope.org/zope"
   xmlns:browser="http://namespaces.zope.org/browser"
   xmlns:faceted="http://namespaces.zope.org/faceted"
+  xmlns:zcml="http://namespaces.zope.org/zcml"
   i18n_domain="collective.geo.faceted">
 
   <!-- bound widget -->
-  <faceted:widget factory=".bounds.Widget" />
+  <configure zcml:condition="not-have plone-5">
+    <faceted:widget factory=".bounds.Widget" />
+  </configure>
+  <configure zcml:condition="have plone-5">
+    <faceted:widget
+      factory=".bounds.Widget"
+      schema=".bounds.IBoundsSchema"
+      />
+  </configure>
 
   <adapter
     for=".interfaces.IBoundsWidget"
