@@ -39,11 +39,11 @@ class TestViewlet(unittest.TestCase):
         viewlet = my_viewlet[0]
         return viewlet
 
-    def test_avaiable(self):
+    def test_available(self):
         context = self.portal
         viewlet = self.get_viewlet(
             context, 'plone.belowcontentbody', 'mapviewlet')
-        self.assertFalse(viewlet.avaiable())
+        self.assertFalse(viewlet.available())
 
         coll = api.content.create(
             type='Collection', container=self.portal, id='collection')
@@ -52,11 +52,11 @@ class TestViewlet(unittest.TestCase):
         subtyper = getMultiAdapter(
             (coll, self.request), name=u'faceted_subtyper')
         subtyper.enable()
-        self.assertFalse(viewlet.avaiable())
+        self.assertFalse(viewlet.available())
 
         annotations = IAnnotations(coll)
         annotations.setdefault(ANNO_FACETED_LAYOUT, 'faceted-map-view')
-        self.assertTrue(viewlet.avaiable())
+        self.assertTrue(viewlet.available())
 
     def test_geomap(self):
         context = self.portal

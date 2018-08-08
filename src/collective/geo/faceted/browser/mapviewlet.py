@@ -10,7 +10,7 @@ class MapViewlet(common.ViewletBase):
 
     index = ViewPageTemplateFile('mapviewlet.pt')
 
-    def avaiable(self):
+    def available(self):
         if not getattr(self.context, 'layout', '') == 'facetednavigation_view':
             return False
         view_name = IAnnotations(self.context).get(

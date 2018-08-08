@@ -1,4 +1,4 @@
-<tal:condition tal:condition="view/avaiable">
+<tal:condition tal:condition="view/available">
 
   <div id="map-viewlet" i18n:domain="collective.geo.leaflet">
     <metal:use use-macro="context/@@collectivegeoleaflet-macros/map-div"/>
