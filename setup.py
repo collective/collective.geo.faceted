@@ -21,7 +21,6 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 4.0",
         "Framework :: Plone :: 5.0",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
@@ -43,7 +42,7 @@ setup(
         'Products.GenericSetup>=1.8.2',
         'setuptools',
         'z3c.jbot',
-        'eea.facetednavigation',
+        'eea.facetednavigation>=10.0',
         'collective.geo.leaflet',
         'plone.app.contenttypes',
     ],
