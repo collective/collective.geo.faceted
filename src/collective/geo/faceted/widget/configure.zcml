@@ -5,7 +5,10 @@
   i18n_domain="collective.geo.faceted">
 
   <!-- bound widget -->
-  <faceted:widget factory=".bounds.Widget" />
+  <faceted:widget
+    factory=".bounds.Widget"
+    schema=".bounds.IBoundsSchema"
+    />
 
   <adapter
     for=".interfaces.IBoundsWidget"

@@ -7,4 +7,35 @@
       </element>
     </value>
   </record>
+
+  <!-- bounds widget -->
+  <records prefix="plone.resources/faceted-widgets-bounds-view"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++resource++collective.geo.faceted.widget.view.css</element>
+    </value>
+    <value key="js">++resource++collective.geo.faceted.widget.view.js</value>
+  </records>
+
+  <records prefix="plone.resources/faceted-widgets-bounds-edit"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++resource++collective.geo.faceted.widget.edit.css</element>
+    </value>
+    <value key="js">++resource++collective.geo.faceted.widget.edit.js</value>
+  </records>
+
+  <records prefix="plone.bundles/faceted-view"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources" purge="false">
+      <element>faceted-widgets-bounds-view</element>
+    </value>
+  </records>
+
+  <records prefix="plone.bundles/faceted-edit"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources" purge="false">
+      <element>faceted-widgets-bounds-edit</element>
+    </value>
+  </records>
 </registry>
