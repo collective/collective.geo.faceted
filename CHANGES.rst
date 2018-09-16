@@ -2,10 +2,10 @@ Changelog
 =========
 
 
-1.0.4 (unreleased)
+2.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Upgrade package for Plone 5
 
 
 1.0.3 (2017-07-11)
