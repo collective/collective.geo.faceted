@@ -16,4 +16,4 @@ msgstr ""
 
 #: ../browser/configure.zcml:24
 msgid "Faceted map view"
-msgstr "Vue facette avec carte"
+msgstr "Carte"
