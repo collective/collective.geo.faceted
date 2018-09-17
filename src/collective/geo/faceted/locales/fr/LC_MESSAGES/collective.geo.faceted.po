@@ -24,7 +24,7 @@ msgstr "Afficher uniquement les objects visibles dans la carte"
 
 #: ../browser/configure.zcml:24
 msgid "Faceted map view"
-msgstr "Vue faceted avec carte"
+msgstr "Vue facette avec carte"
 
 #: ../configure.zcml:20
 msgid "Installs the collective.geo.faceted add-on."

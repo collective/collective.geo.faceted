@@ -10,3 +10,4 @@ domain=collective.geo.faceted
 
 i18ndude rebuild-pot --pot $domain.pot --create $domain ../
 i18ndude sync --pot $domain.pot */LC_MESSAGES/$domain.po
+i18ndude sync --pot eea.pot */LC_MESSAGES/eea.po
