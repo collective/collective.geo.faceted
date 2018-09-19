@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.0a2 (unreleased)
+2.0.0a2 (2018-09-19)
 --------------------
 
 - Fix syntax in registry.xml
