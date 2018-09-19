@@ -5,13 +5,15 @@ Changelog
 2.0.0a2 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix syntax in registry.xml
+  [mpeeters]
 
 
 2.0.0a1 (2018-09-19)
 --------------------
 
 - Upgrade package for Plone 5
+  [mpeeters]
 
 
 1.0.3 (2017-07-11)
