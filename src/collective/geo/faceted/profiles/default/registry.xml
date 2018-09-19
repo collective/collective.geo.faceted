@@ -20,7 +20,7 @@
   <records prefix="plone.resources/faceted-widgets-bounds-edit"
            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
     <value key="css">
-      <element>++resource++collective.geo.faceted.widget.edit.css</element>
+      <element></element>
     </value>
     <value key="js">++resource++collective.geo.faceted.widget.edit.js</value>
   </records>
