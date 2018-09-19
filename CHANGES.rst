@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-2.0.0 (unreleased)
-------------------
+2.0.0a1 (2018-09-19)
+--------------------
 
 - Upgrade package for Plone 5
 
