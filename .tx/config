@@ -1,0 +1,17 @@
+[main]
+host = https://www.transifex.com
+
+[plone-collective.collective-geo-faceted-pot]
+file_filter = src/collective/geo/faceted/locales/<lang>/LC_MESSAGES/collective.geo.faceted.po
+minimum_perc = 0
+source_file = src/collective/geo/faceted/locales/collective.geo.faceted.pot
+source_lang = en
+type = PO
+
+[plone-collective.collective-geo-faceted-eea-pot]
+file_filter = src/collective/geo/faceted/locales/<lang>/LC_MESSAGES/eea.po
+minimum_perc = 0
+source_file = src/collective/geo/faceted/locales/eea.pot
+source_lang = en
+type = PO
+

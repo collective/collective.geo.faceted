@@ -5,6 +5,8 @@ Changelog
 2.0.0a3 (unreleased)
 --------------------
 
+- Add Transifex.net service integration to manage the translation process.
+  [macagua]
 - Add Spanish translation for eea domain
   [macagua]
 - Add Spanish translation
