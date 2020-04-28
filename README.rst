@@ -27,6 +27,15 @@ Features
     :height: 1026
     :align: center
 
+Translations
+------------
+
+This product has been translated into
+
+- Spanish.
+
+- French.
+
 Installation
 ------------
 

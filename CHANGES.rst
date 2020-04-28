@@ -5,7 +5,8 @@ Changelog
 2.0.0a3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Add Spanish translation
+  [macagua]
 
 
 2.0.0a2 (2018-09-19)
