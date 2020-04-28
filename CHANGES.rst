@@ -5,6 +5,8 @@ Changelog
 2.0.0a3 (unreleased)
 --------------------
 
+- Add Spanish translation for eea domain
+  [macagua]
 - Add Spanish translation
   [macagua]
 
